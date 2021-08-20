@@ -44,7 +44,7 @@ h1 {
 }
 .rankerButton {
     position:relative;
-    top:120px;
+    top:150px;
     right:30px;
     font-size: 150%;
     font-family: monospace;
@@ -57,7 +57,7 @@ h1 {
 }
 .calculatorButton {
     position:relative;
-    top:120px;
+    top:150px;
     left:0px;
     font-size: 150%;
     font-family: monospace;
@@ -70,7 +70,7 @@ h1 {
 }
 .statsButton {
     position:relative;
-    top:120px;
+    top:150px;
     left:30px;
     font-size: 150%;
     font-family: monospace;
