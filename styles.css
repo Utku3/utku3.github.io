@@ -1,11 +1,11 @@
 body {
-    background-color: rgb(217, 245, 245);
+    background-image: linear-gradient(to left, #efa635, #ff9155, #ff817b, #ff7aa2, #f57fc6, #d790e5, #b1a1f8, #86afff, #61c3ff, #54d3fb, #69e1ed, #8eebde);
 }
 h1 {
     color: black;
     position: relative;
     left: 5px;
-    text-shadow: 2px 2px rgb(76, 146, 146);
+    text-shadow: 2px 2px rgb(152, 153, 153);
 }
 .font1 {
     font-family:monospace;
@@ -14,73 +14,75 @@ h1 {
     position: relative;
     height: 65px;
     width: 98,7;
-    background-color:rgba(62, 205, 224, 0.521);
+    background-color:rgba(255, 255, 255, 0.4);
     padding: 5px;
     margin: 2px;
-    border-top: 3px solid #95cfdd;
-    border-right: 5px solid #054e61;
-    border-bottom: 5px solid #054e61;
-    border-left: 3px solid #95cfdd;
-    border-image: initial;
+    border:1px solid white;
 }
 .mbu {
     position:relative;
     bottom: 15px;
     text-align: right;
     font-family:monospace;
-    text-shadow: 1px 1px rgb(87, 172, 169);    
+    text-shadow: 1px 1px rgb(152, 153, 153);    
 }
-.butons {
+.buttons {
     text-align: center;
 }
-.button1 {
+.buttons >.rankerButton:hover{
+    background: linear-gradient(rgba(0,0,0,0.08),rgba(0,0,0,0.08));
+    color:black;
+    text-shadow:none;
+}
+.buttons >.calculatorButton:hover{
+    background: linear-gradient(rgba(0,0,0,0.08),rgba(0,0,0,0.08));
+    color:black;
+    text-shadow:none;
+}
+.buttons >.statsButton:hover{
+    background: linear-gradient(rgba(0,0,0,0.08),rgba(0,0,0,0.08));
+    color:black;
+    text-shadow:none;
+}
+.rankerButton {
     position:relative;
-    top:80px;
-    left:200px;
+    top:120px;
+    right:30px;
     font-size: 150%;
     font-family: monospace;
     text-decoration: none;
-    background-color: #186ea0;
-    color: #c0e2eb;
+    background: linear-gradient(to left, rgba(0,0,0,.3),rgba(0,0,0,.3));
+    color: rgba(255,255,255,0.95);
     padding: 50px 20px 50px 20px;
-    border-top: 2px solid #84c1e4;
-    border-right: 4px solid #083b58;
-    border-bottom: 4px solid #083b58;
-    border-left: 2px solid #84c1e4;
-    text-shadow: 2px 2px rgb(43, 44, 44);
-  }
-.button2 {
+    border:1px solid white;
+    text-shadow:1px 1px black;
+}
+.calculatorButton {
     position:relative;
-    top:80px;
-    left:300px;
+    top:120px;
+    left:0px;
     font-size: 150%;
     font-family: monospace;
     text-decoration: none;
-    background-color: #186ea0;
-    color: #c0e2eb;
+    background: linear-gradient(to left, rgba(0,0,0,.3),rgba(0,0,0,.3));
+    color: rgba(255,255,255,0.95);
     padding: 50px 20px 50px 20px;
-    border-top: 2px solid #84c1e4;
-    border-right: 4px solid #083b58;
-    border-bottom: 4px solid #083b58;
-    border-left: 2px solid #84c1e4;
-    text-shadow: 2px 2px rgb(43, 44, 44);
-  }
-.button3 {
+    border:1px solid white;
+    text-shadow:1px 1px black;
+}
+.statsButton {
     position:relative;
-    top:80px;
-    left:400px;
+    top:120px;
+    left:30px;
     font-size: 150%;
     font-family: monospace;
     text-decoration: none;
-    background-color: #186ea0;
-    color: #c0e2eb;
+    background: linear-gradient(to left, rgba(0,0,0,.3),rgba(0,0,0,.3));
+    color: rgba(255,255,255,0.95);
     padding: 50px 20px 50px 20px;
-    border-top: 2px solid #84c1e4;
-    border-right: 4px solid #083b58;
-    border-bottom: 4px solid #083b58;
-    border-left: 2px solid #84c1e4;
-    text-shadow: 2px 2px rgb(43, 44, 44);
-  }
+    border:1px solid white;
+    text-shadow:1px 1px black;
+}
 .p1 {
     font-family: monospace;
     font-size: large;
