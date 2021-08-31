@@ -12,7 +12,10 @@ calculateButton.onclick = function() {
     const t4 = document.getElementById('time4').value;
 
     // Checking if the numbers entered are bigger than 0.
-    if(Number(t1)<=0 || Number(t2)<=0 || Number(t3)<=0 || Number(t4)<=0) {
+    if (Number(t1)==0 || Number(t2)==0 || Number(t3)==0 || Number(t4)==0){
+        alert("All 4 of the fields must be filled.")
+    }
+    else if (Number(t1)<=0 || Number(t2)<=0 || Number(t3)<=0 || Number(t4)<=0) {
         alert("The number you entered needs to be bigger than 0.")
     }
     else{
