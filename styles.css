@@ -18,6 +18,10 @@ h1 {
     margin: 2px;
     border:1px solid white;
 }
+.menuButton {
+    color: black;
+    text-decoration: none;
+}
 .mbu {
     position:relative;
     bottom: 15px;
@@ -158,12 +162,17 @@ h1 {
     padding: 5px 10px 5px 10px;
     border:0.6px solid white;
 }
+#time1::-webkit-outer-spin-button,
+#time1::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .time1label {
     font-family: monospace;
     position: relative;
     top:50px;
     left:25px;
-    font-size: 100%;
+    font-size: 120%;
     font-family: monospace;
     text-decoration: none;
     background: linear-gradient(to left, rgba(0,0,0,.01),rgba(0,0,0,.01));
@@ -184,12 +193,17 @@ h1 {
     padding: 5px 10px 5px 10px;
     border:0.6px solid white;
 }
+#time2::-webkit-outer-spin-button,
+#time2::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .time2label {
     font-family: monospace;
     position: relative;
     top:50px;
     left:25px;
-    font-size: 100%;
+    font-size: 120%;
     font-family: monospace;
     text-decoration: none;
     background: linear-gradient(to left, rgba(0,0,0,.01),rgba(0,0,0,.01));
@@ -210,12 +224,17 @@ h1 {
     padding: 5px 10px 5px 10px;
     border:0.6px solid white;
 }
+#time3::-webkit-outer-spin-button,
+#time3::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .time3label {
     font-family: monospace;
     position: relative;
     top:50px;
     left:25px;
-    font-size: 100%;
+    font-size: 120%;
     font-family: monospace;
     text-decoration: none;
     background: linear-gradient(to left, rgba(0,0,0,.01),rgba(0,0,0,.01));
@@ -235,12 +254,17 @@ h1 {
     padding: 5px 10px 5px 10px;
     border:0.6px solid white;
 }
+#time4::-webkit-outer-spin-button,
+#time4::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 .time4label {
     font-family: monospace;
     position: relative;
     top:50px;
     left:25px;
-    font-size: 100%;
+    font-size: 120%;
     font-family: monospace;
     text-decoration: none;
     background: linear-gradient(to left, rgba(0,0,0,.01),rgba(0,0,0,.01));
@@ -273,4 +297,133 @@ h1 {
     padding: 5px 10px 5px 10px;
     border:0.6px solid white;
     text-shadow: 0.8px 0.8px rgba(255,255,255,0.5);
+}
+
+#bestWorstAo5Button {
+    position: relative;
+    top:60px;
+    left:50px;
+    font-size: 100%;
+    font-family: monospace;
+    text-decoration: none;
+    background: linear-gradient(to left,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    color: rgb(255, 255, 255);
+    padding: 5px 10px 5px 10px;
+    border:0.6px solid white;
+    text-shadow:1px 1px black;
+}
+#bestWorstAo5Button:hover{
+    background: linear-gradient(rgba(0,0,0,0.08),rgba(0,0,0,0.08));
+}
+#bestAo5 {
+    font-family: monospace;
+    position: relative;
+    top:60px;
+    left:25px;
+    font-size: 120%;
+    font-family: monospace;
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 0px 5px 25px;
+    text-shadow: 0.8px 0.8px rgba(255,255,255,0.5);
+}
+#worstAo5 {
+    font-family: monospace;
+    position: relative;
+    top:60px;
+    left:25px;
+    font-size: 120%;
+    font-family: monospace;
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 0px 5px 25px;
+    text-shadow: 0.8px 0.8px rgba(255,255,255,0.5);
+}
+#desiredAo5 {
+    position: relative;
+    top:50px;
+    left:28px;
+    font-size: 100%;
+    font-family: monospace;
+    text-decoration: none;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1));
+    color: rgb(0,0,0);
+    padding: 5px 10px 5px 10px;
+    border:0.6px solid white;
+}
+#desiredAo5::-webkit-outer-spin-button,
+#desiredAo5::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.desiredAo5Label {
+    font-family: monospace;
+    position: relative;
+    top:50px;
+    left:25px;
+    font-size: 120%;
+    font-family: monospace;
+    text-decoration: none;
+    background: linear-gradient(to left, rgba(0,0,0,.01),rgba(0,0,0,.01));
+    color: #000000;
+    padding: 5px 0px 5px 25px;
+    text-shadow: 0.8px 0.8px rgba(255,255,255,0.5);
+}
+#desiredAo5Button {
+    position: relative;
+    top:70px;
+    left:50px;
+    font-size: 100%;
+    font-family: monospace;
+    text-decoration: none;
+    background: linear-gradient(to left,rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    color: rgb(255, 255, 255);
+    padding: 5px 10px 5px 10px;
+    border:0.6px solid white;
+    text-shadow:1px 1px black;
+}
+#desiredAo5Button:hover{
+    background: linear-gradient(rgba(0,0,0,0.08),rgba(0,0,0,0.08));
+}
+#neededTimeLabel {
+    font-family: monospace;
+    position: relative;
+    top:70px;
+    left:25px;
+    font-size: 120%;
+    font-family: monospace;
+    text-decoration: none;
+    color: #000000;
+    padding: 5px 0px 5px 25px;
+    text-shadow: 0.8px 0.8px rgba(255,255,255,0.5);
+}
+.averageTimeLabel {
+    font-family: monospace;
+    position: relative;
+    top:70px;
+    left:25px;
+    font-size: 110%;
+    font-family: monospace;
+    text-decoration: none;
+    background: linear-gradient(to left, rgba(0,0,0,.01),rgba(0,0,0,.01));
+    color: #000000;
+    padding: 5px 0px 5px 25px;
+    text-shadow: 0.8px 0.8px rgba(255,255,255,0.5);
+}
+#averageTime {
+    position: relative;
+    top:70px;
+    left:28px;
+    font-size: 100%;
+    font-family: monospace;
+    text-decoration: none;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0.1),rgba(255, 255, 255, 0.1));
+    color: rgb(0,0,0);
+    padding: 5px 10px 5px 10px;
+    border:0.6px solid white;
+}
+#averageTime::-webkit-outer-spin-button,
+#averageTime::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
