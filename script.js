@@ -11,6 +11,12 @@ calculateButton.onclick = function() {
     const t3 = document.getElementById('time3').value;
     const t4 = document.getElementById('time4').value;
 
+    // Checking if the numbers entered are bigger than 0.
+    if(Number(t1)<=0 || Number(t2)<=0 || Number(t3)<=0 || Number(t4)<=0) {
+        alert("The number you entered needs to be bigger than 0.")
+    }
+    else{
+
     const maxAo5List = [Number(t1),Number(t2),Number(t3),Number(t4)];
     const minAo5List = [Number(t1),Number(t2),Number(t3),Number(t4)];
 
@@ -63,7 +69,7 @@ calculateButton.onclick = function() {
             neededTimeLabel.innerHTML = "You need to get " + neededTime.toFixed(2) + " to achieve desired Ao5.";
             //alert("You need to get " + neededTime.toFixed(2) + " to achieve desired Ao5.");
         }
-    }
+    }}
 
 };
 };
