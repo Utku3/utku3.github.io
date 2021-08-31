@@ -59,6 +59,16 @@ calculateButton.onclick = function() {
   
     document.getElementById('desired').appendChild(div);
     const desiredAo5Button = document.getElementById("desiredAo5Button");
+
+    //Looking for "Enter" button press on Desired Ao5
+    const desiredinput = document.getElementById("desiredAo5");
+    desiredinput.addEventListener("keyup", function(event) {
+    if (event.keyCode === 13) {
+    event.preventDefault();
+    document.getElementById("desiredAo5Button").click();
+    }
+    });
+
     desiredAo5Button.onclick = function() {
         const desiredAo5 = document.getElementById("desiredAo5").value;
         if (Number(minMean)>Number(desiredAo5)){
@@ -80,3 +90,10 @@ calculateButton.onclick = function() {
 
 };
 };
+const time4input = document.getElementById("time4");
+time4input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("bestWorstAo5Button").click();
+  }
+});
