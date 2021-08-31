@@ -8,23 +8,31 @@
     <meta name="keywords" content="Rubik's Cube, Speedcubing, Square-1">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
     <!-- <h1>Canım Ablacım :)</h1> -->
   </head>
   <body>
     <header>
-        <div class="navline"><h1 class="font1">Rubik's Cube Statistics</h1><p class="mbu">Made by Utku</p></div>
+        <div class="navline"><h1 class="font1"><a href="index.html" class="menuButton">Rubik's Cube Statistics</a></h1><p class="mbu">Made by Utku</p></div>
     </header>
     <div class="container">
         <p class="calcp1">This is a tool to calculate what 5th time you need to get for a desired Ao5.</p>
         <div class="times">
           <label class="time1label" for="time">Time 1:</label>
-          <input id="time1" type="text" step="any" value="">
+          <input id="time1" type="number" step="any" value="">
           <label class="time2label" for="time">Time 2:</label>
-          <input id="time2" type="text" step="any" value="">
+          <input id="time2" type="number" step="any" value="">
           <label class="time3label" for="time">Time 3:</label>
-          <input id="time3" type="text" step="any" value="">
+          <input id="time3" type="number" step="any" value="">
           <label class="time4label" for="time">Time 4:</label>
-          <input id="time4" type="text" step="any" value="">
+          <input id="time4" type="number" step="any" value="">
+        </div>
+      </br>
+        <div>
+          <button id="bestWorstAo5Button">Calculate</button>
+          <p id="bestAo5">Best possible Ao5:</p>
+          <p id="worstAo5">Worst possible Ao5:</p>
+          <div id=desired></div>
         </div>
     </div>
   </body>
