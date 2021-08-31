@@ -58,10 +58,14 @@ calculateButton.onclick = function() {
     const desiredAo5Button = document.getElementById("desiredAo5Button");
     desiredAo5Button.onclick = function() {
         const desiredAo5 = document.getElementById("desiredAo5").value;
-        if (Number(desiredAo5)>Number(maxMean) || Number(minMean)>Number(desiredAo5)) {
+        if (Number(minMean)>Number(desiredAo5)){
             const neededTimeLabel = document.getElementById("neededTimeLabel");
             neededTimeLabel.innerHTML = "You can't achieve the desired Ao5";
             //alert("You can't achieve the desired Ao5");
+        }
+        else if (Number(desiredAo5)>Number(maxMean)) {
+            const neededTimeLabel = document.getElementById("neededTimeLabel");
+            neededTimeLabel.innerHTML = "Any time you get gives you the desired Ao5";
         }
         else {
             const neededTime = ((Number(desiredAo5)*3)-Number(maxAo5List[0])-Number(maxAo5List[1]));
